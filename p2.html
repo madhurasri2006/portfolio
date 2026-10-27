@@ -1,0 +1,343 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Name — Data Analyst Resume</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Poppins:wght@300;400;500;600&display=swap');
+
+        :root {
+            --bg: #14120f;
+            --gold: #c9a15f;
+            --gold-light: #e0c384;
+            --text: #eae6dd;
+            --text-dim: #b9b3a6;
+            --line: rgba(201,161,95,0.55);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #0b0a08;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+            color: var(--text);
+        }
+
+        .page {
+            width: 780px;
+            max-width: 100%;
+            background: radial-gradient(circle at 15% 10%, rgba(201,161,95,0.06), transparent 40%), linear-gradient(180deg, #17140f 0%, #100e0b 100%);
+            border: 1px solid var(--line);
+            padding: 14px;
+            position: relative;
+        }
+
+            .page::before {
+                content: "";
+                position: absolute;
+                inset: 8px;
+                border: 1px solid var(--line);
+                pointer-events: none;
+            }
+
+        .inner {
+            padding: 55px 60px 60px;
+            position: relative;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 42px;
+        }
+
+        .eyebrow {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 17px;
+            letter-spacing: 1px;
+            color: var(--gold-light);
+            margin-bottom: 6px;
+        }
+
+        h1.name {
+            font-family: 'Playfair Display', serif;
+            font-weight: 400;
+            font-size: 46px;
+            letter-spacing: 2px;
+            color: #f5f1e8;
+        }
+
+        .layout {
+            display: grid;
+            grid-template-columns: 1fr 240px;
+            gap: 40px;
+        }
+
+        .col-main section {
+            margin-bottom: 34px;
+        }
+
+        .col-side section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 500;
+            font-size: 22px;
+            color: var(--gold-light);
+            margin-bottom: 14px;
+            letter-spacing: 0.5px;
+        }
+
+        .col-side h2 {
+            font-size: 19px;
+        }
+
+        p, li {
+            font-size: 13.5px;
+            line-height: 1.75;
+            color: var(--text-dim);
+            font-weight: 300;
+        }
+
+        .job {
+            margin-bottom: 26px;
+        }
+
+            .job:last-child {
+                margin-bottom: 0;
+            }
+
+            .job .role {
+                font-size: 14.5px;
+                font-weight: 500;
+                color: var(--text);
+                margin-bottom: 2px;
+            }
+
+            .job .meta {
+                font-size: 13px;
+                color: var(--gold-light);
+                margin-bottom: 8px;
+            }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4px 20px;
+        }
+
+            .skills-grid li, .lang-list li {
+                list-style: none;
+                position: relative;
+                padding-left: 14px;
+                font-size: 13.5px;
+            }
+
+                .skills-grid li::before, .lang-list li::before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 9px;
+                    width: 5px;
+                    height: 5px;
+                    background: var(--gold);
+                }
+
+        .lang-list li {
+            margin-bottom: 4px;
+        }
+
+        .photo-wrap {
+            width: 108px;
+            height: 108px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto 32px;
+            border: 2px solid var(--gold);
+            background: #2a2a2a;
+        }
+
+            .photo-wrap img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+            }
+
+        .edu-item {
+            margin-bottom: 16px;
+        }
+
+            .edu-item:last-child {
+                margin-bottom: 0;
+            }
+
+            .edu-item .years {
+                font-size: 12.5px;
+                color: var(--text-dim);
+            }
+
+            .edu-item .degree {
+                font-size: 13.5px;
+                color: var(--text);
+                margin-bottom: 1px;
+            }
+
+            .edu-item .school {
+                font-size: 13.5px;
+                font-weight: 500;
+                color: #f0ead9;
+            }
+
+        .contact-list p {
+            margin-bottom: 8px;
+        }
+
+            .contact-list p:last-child {
+                margin-bottom: 0;
+            }
+
+        @media (max-width: 640px) {
+            .inner {
+                padding: 36px 26px 40px;
+            }
+
+            .layout {
+                grid-template-columns: 1fr;
+            }
+
+            .col-side {
+                order: -1;
+            }
+
+            h1.name {
+                font-size: 34px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="page">
+        <div class="inner">
+
+            <header>
+                <div class="eyebrow">Data Analyst</div>
+                <h1 class="name">MADHURASRI RV</h1>
+            </header>
+
+            <div class="layout">
+
+                <!-- MAIN COLUMN -->
+                <div class="col-main">
+
+                    <section>
+                        <h2>Profile</h2>
+                        <p>
+                            3rd-year student with a strong foundation in Python, Java, SQL, and
+                            Database Management. Seeking a Data Analyst position to apply my skills
+                            in analyzing data, building queries, and managing databases, while
+                            contributing to the company's decision-making and growth through
+                            data-driven insights.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2>Projects</h2>
+
+                        <div class="job">
+                            <div class="role">Student Database Management System</div>
+                            <div class="meta">Built using Java and MySQL</div>
+                            <p>
+                                Designed a database system to store, update, and retrieve student
+                                records efficiently, using structured SQL queries and a Java-based
+                                interface for smooth data handling.
+                            </p>
+                        </div>
+
+                        <div class="job">
+                            <div class="role">Sales Data Analysis</div>
+                            <div class="meta">Built using Python (Pandas, Matplotlib)</div>
+                            <p>
+                                Analyzed sample sales data to identify trends and patterns, and
+                                visualized the results through charts to support data-driven
+                                business decisions.
+                            </p>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2>Skills</h2>
+                        <ul class="skills-grid">
+                            <li>Python</li>
+                            <li>Java</li>
+                            <li>SQL</li>
+                            <li>Database Management</li>
+                            <li>MySQL</li>
+                            <li>Data Analysis</li>
+                            <li>Problem Solving</li>
+                            <li>Critical Thinking</li>
+                        </ul>
+                    </section>
+
+                </div>
+
+                <!-- SIDE COLUMN -->
+                <div class="col-side">
+                    <section>
+                        <h2>Education</h2>
+                        <div class="edu-item">
+                            <div class="degree"> B.Tech - IT</div>
+                            <div class="years">2024 – 2028</div>
+                            <div class="school">VELALAR COLLEGE OF ENGINEERING AND TECHNOLOGY</div>
+                        </div>
+                        <div class="edu-item">
+                            <div class="degree">Higher Secondary (12th)</div>
+                            <div class="years">20XX – 20XX</div>
+                            <div class="school">RAJAVIGNESH HIGHER SEC SCHOOL</div>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2>Certifications</h2>
+                        <ul class="lang-list">
+                            <li>Python for Data Analysis</li>
+                            <li>SQL for Data Science</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>Language</h2>
+                        <ul class="lang-list">
+                            <li>English</li>
+                            <li>Tamil</li>
+                            <li>Japanese</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>Contact</h2>
+                        <div class="contact-list">
+                            <p>+91 8098004091</p>
+                            <p>srimadhura20@gmail.com</p>
+                            <p>linkedin.com/in/Madhu20</p>
+                            <p>Erode, Tamil Nadu, India</p>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
